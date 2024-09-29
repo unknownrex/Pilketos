@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PILKETOS</string>
+    <string name="calon1">Kaoruko Waguri</string>
+    <string name="calon2">Ryo Yamada</string>
+    <string name="calon3">Nadeshiko Kagamihara</string>
+
+
+
+    <string name="kelas_jurusan">XI - PPLG 2</string>
+
+    <string name="default_visi">
+        "Menjadikan OSIS sebagai wadah pengembangan karakter siswa yang kreatif, inovatif, dan berintegritas dalam mencapai prestasi akademik maupun non-akademik."
+    </string>
+    <string name="dafault_misi">
+        1. Meningkatkan program ekstrakurikuler yang mendukung minat dan bakat siswa.\n
+        2. Membangun budaya disiplin dan tanggung jawab di lingkungan sekolah.\n
+        3. Mewujudkan kegiatan OSIS yang transparan, akuntabel, dan melibatkan seluruh elemen sekolah.\n
+        4. Meningkatkan komunikasi dan kerja sama antara siswa, guru, dan pihak sekolah untuk mencapai visi bersama.
+    </string>
+</resources>
