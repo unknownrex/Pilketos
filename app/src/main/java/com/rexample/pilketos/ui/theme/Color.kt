@@ -18,3 +18,5 @@ val DarkContainer = Color(0xFF1E1E1E)
 val DarkPrimaryWhite = Color(0xFFF0F0F0)
 val DarkPrimaryGrey = Color(0xFF838383)
 val DarkSecondaryGrey = Color(0xFFD6D6D6)
+
+val Error = Color(0xFFE13535)
