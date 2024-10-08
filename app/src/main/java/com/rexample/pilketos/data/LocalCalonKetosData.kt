@@ -35,10 +35,19 @@ object LocalCalonKetosData {
             suaraMasuk = 00.00f
         ),
         CalonKetos(
-            id = 1,
+            id = 3,
             nama = R.string.calon3,
             kelasJurusan = R.string.kelas_jurusan,
             image = R.drawable.nadeshiko_kagamihara,
+            visi = R.string.default_visi,
+            misi = R.string.dafault_misi,
+            suaraMasuk = 00.00f
+        ),
+        CalonKetos(
+            id = 4,
+            nama = R.string.zuppers_yummers,
+            kelasJurusan = R.string.kelas_jurusan,
+            image = R.drawable.green_alien_cat,
             visi = R.string.default_visi,
             misi = R.string.dafault_misi,
             suaraMasuk = 00.00f
