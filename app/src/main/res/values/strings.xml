@@ -9,7 +9,7 @@
     <string name="kelas_jurusan">XI - PPLG 2</string>
 
     <string name="default_visi">
-        "Menjadikan OSIS sebagai wadah pengembangan karakter siswa yang kreatif, inovatif, dan berintegritas dalam mencapai prestasi akademik maupun non-akademik."
+        Menjadikan OSIS sebagai wadah pengembangan karakter siswa yang kreatif, inovatif, dan berintegritas dalam mencapai prestasi akademik maupun non-akademik.
     </string>
     <string name="dafault_misi">
         1. Meningkatkan program ekstrakurikuler yang mendukung minat dan bakat siswa.\n
@@ -17,4 +17,5 @@
         3. Mewujudkan kegiatan OSIS yang transparan, akuntabel, dan melibatkan seluruh elemen sekolah.\n
         4. Meningkatkan komunikasi dan kerja sama antara siswa, guru, dan pihak sekolah untuk mencapai visi bersama.
     </string>
+    <string name="zuppers_yummers">Zuppers Yummers</string>
 </resources>
