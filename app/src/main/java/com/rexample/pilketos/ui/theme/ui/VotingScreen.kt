@@ -1,11 +1,7 @@
 package com.rexample.pilketos.ui.theme.ui
 
-import android.graphics.Paint
-import android.widget.Toast
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -18,13 +14,13 @@ import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
@@ -45,7 +41,6 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
@@ -65,7 +60,7 @@ fun VotingScreen(
     val pagerState = rememberPagerState()
     val state by viewModel.uiState.collectAsState()
 
-    Column(modifier = modifier.fillMaxSize()) {
+    Column(modifier = modifier.fillMaxSize().wrapContentSize(Alignment.Center)) {
         HorizontalPager(
             count = LocalCalonKetosData.allCalonKetos.size,
             state = pagerState,
@@ -76,16 +71,16 @@ fun VotingScreen(
                 calonKetos = calon,
                 isCalonVoted = state.votedCalon == calon.id,
                 isUserVoted = state.isUserVoted,
-                onPilihClick = { viewModel.showVoteDialog() },
+                onPilihClick = { viewModel.ShowVoteDialog() },
                 onVisiMisiClick = {}
             )
         }
 
         if (state.isShowingVoteDialog) {
             VoteConfirmDialog(
-                onDismissRequest = { viewModel.hideVoteDialog() },
+                onDismissRequest = { viewModel.HideVoteDialog() },
                 onConfirmRequest = {
-                    viewModel.voteCalon(LocalCalonKetosData.allCalonKetos[pagerState.currentPage].id)
+                    viewModel.VoteCalon(LocalCalonKetosData.allCalonKetos[pagerState.currentPage].id)
                 }
             )
         }
@@ -290,10 +285,3 @@ fun CardButton(
     }
 }
 
-@Preview(showBackground = true, showSystemUi = true)
-@Composable
-fun ComponentPreview() {
-    PILKETOSTheme(darkTheme = false) {
-        VotingScreen()
-    }
-}
