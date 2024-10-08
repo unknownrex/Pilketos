@@ -5,6 +5,8 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.LineHeightStyle
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.rexample.pilketos.R
 
@@ -14,6 +16,7 @@ val poppins = FontFamily(
     Font(R.font.poppins_semibold, FontWeight.Normal),
     Font(R.font.poppins_bold, FontWeight.Bold)
 )
+val bebasNeue = FontFamily(Font(R.font.bebasneue_regular, FontWeight.Normal))
 val Typography = Typography(
     bodyLarge = TextStyle(
         fontFamily = poppins,
@@ -42,14 +45,25 @@ val Typography = Typography(
     ),
     bodyMedium = TextStyle(
         fontFamily = poppins,
-        fontWeight = FontWeight.SemiBold,
+        fontWeight = FontWeight.Normal,
         fontSize = 14.sp
     ),
     bodySmall = TextStyle(
         fontFamily = poppins,
         fontWeight = FontWeight.Medium,
         fontSize = 12.sp
+    ),
+    displayLarge = TextStyle(
+        fontFamily = bebasNeue,
+        fontWeight = FontWeight.Normal,
+        fontSize = 48.sp
+    ),
+    displayMedium = TextStyle(
+        fontFamily = bebasNeue,
+        fontWeight = FontWeight.Normal,
+        fontSize = 32.sp
     )
+
     /* Other default text styles to override
     titleLarge = TextStyle(
         fontFamily = FontFamily.Default,
