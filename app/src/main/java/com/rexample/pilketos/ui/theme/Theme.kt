@@ -19,7 +19,12 @@ private val DarkColorScheme = darkColorScheme(
     primary = PrimaryGreen,
     secondary = DarkPrimaryGrey,
     onPrimary = DarkPrimaryWhite,
-    onSecondary = DarkPrimaryGrey
+    onSecondary = DarkPrimaryGrey,
+    primaryContainer = DarkContainer,
+    onPrimaryContainer = DarkPrimaryWhite,
+    secondaryContainer = TextFieldLabelColor,
+    onSecondaryContainer = DarkSecondaryGrey,
+    error = Error
 )
 
 private val LightColorScheme = lightColorScheme(
@@ -30,7 +35,12 @@ private val LightColorScheme = lightColorScheme(
     primary = PrimaryGreen,
     secondary = LightPrimaryGrey,
     onPrimary = LightPrimaryWhite,
-    onSecondary = LightPrimaryGrey
+    onSecondary = LightPrimaryGrey,
+    primaryContainer = LightPrimaryWhite,
+    onPrimaryContainer = LightPrimaryBlack,
+    secondaryContainer = TextFieldLabelColor,
+    onSecondaryContainer = LightSecondaryGrey,
+    error = Error
 )
 
 @Composable
